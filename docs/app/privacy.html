@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>隱私政策｜午餐決定器 LINE Bot</title>
+  </head>
+  <body>
+    <main>
+      <h1>午餐決定器 LINE Bot 隱私政策</h1>
+      <p>
+        <strong>已發布；生效日期：2026-10-06。</strong>
+        本頁不代表法律審查已完成，單純瀏覽本頁不構成政策接受。
+      </p>
+      <p>營運者：<strong>Zona</strong></p>
+      <p>
+        聯絡信箱：<a href="mailto:bear336339@gmail.com" data-testid="privacy-contact-link"
+          >bear336339@gmail.com</a
+        >
+      </p>
+
+      <h2>處理哪些資料、為何處理</h2>
+      <p>
+        應用程式接收 LINE 私訊事件，在當次處理期間使用訊息本文、主動傳送的經緯度、LINE
+        使用者識別碼、事件識別碼與時間、回覆 token，
+        用於驗證來源、辨識私訊、告知確認、避免重複處理、搜尋附近餐廳與回覆。
+        來源返回的餐廳資料只用於當次篩選與呈現；不使用位置作背景追蹤、員工監控、個人化或行為分析。
+      </p>
+
+      <h2>確認前的位置與第三方傳輸</h2>
+      <p>
+        尚未確認告知的第一筆位置，由應用程式放棄，不傳送至 Google，也不暫存等待同意。
+        請閱讀告知並回覆「了解，僅當次推薦」，再重新傳送位置。告知狀態到期或服務重啟後需重新確認。
+        這不表示確認前無人處理資料：LINE 已接收訊息；使用 Cloudflare Tunnel 入口時，Cloudflare
+        也會處理及轉送進站訊息。
+      </p>
+      <ul>
+        <li>
+          LINE：接收你傳給 Bot 的訊息及位置，再將事件交給本服務；本服務以回覆 token 將推薦內容交給
+          LINE 傳送。
+        </li>
+        <li>
+          Cloudflare：在使用其 Tunnel 測試入口時，轉送 LINE Webhook
+          與政策頁面請求，可能處理傳輸內容、IP 位址及連線資訊。 Cloudflare Tunnel
+          是本次受控測試的臨時入口，不是穩定的正式環境。
+        </li>
+        <li>
+          Google：真實模式僅在確認後收到重新傳送的有效位置時，將經緯度、固定一公里半徑與餐廳搜尋條件送至
+          Google Places API。 搜尋請求不附 LINE 使用者識別碼、訊息本文、回覆 token 或歷史。 本機
+          synthetic 展示不呼叫 Google 或 LINE。
+        </li>
+        <li>
+          地圖及其他外部連結：點擊後會連線至對應第三方；Google Maps 可能收到地圖目的地、IP
+          位址、裝置或帳號資訊，依其服務與你的設定處理。
+        </li>
+      </ul>
+      <p>
+        各第三方依各自政策處理與保留資料，可能涉及跨境處理；本服務無法控制其所有副本、保存期限或所在地，也不能代為保證刪除
+        LINE 或 Google 中的資料。
+      </p>
+
+      <h2>應用層保存與短期控制狀態</h2>
+      <p>
+        應用程式不把位置、訊息本文、推薦歷史或來源回應寫入資料庫、檔案、持久佇列、內容快取或應用日誌。
+        當次處理使用記憶體，處理期限為十秒；診斷只輸出有限狀態分類，不記座標、原始使用者識別碼、token
+        或秘密。
+      </p>
+      <ul>
+        <li>
+          告知控制：記憶體內保存經加密雜湊轉換的使用者代碼、待確認／已確認狀態、事件時間與到期時間，每次告知或確認起算
+          15 分鐘。 確認後的一般搜尋不延長期限。
+        </li>
+        <li>
+          事件去重：記憶體內保存經加密雜湊轉換的事件代碼與到期時間，自首次認領起算 24 小時 5
+          分鐘，不因重送延長。
+        </li>
+        <li>
+          兩類控制狀態各最多 4096 筆，不包含位置、訊息本文或回覆
+          token；代碼仍可在當次程序內關聯，不宣稱匿名。
+          到期即不再有效，讀取時檢查並清理，另每秒定期清理；程序暫停可能延後實際移除。關閉或重啟會清空，不提供跨重啟防重送保證。
+        </li>
+      </ul>
+      <p>
+        上述是應用層行為，不是所有平台皆不處理或儲存資料的承諾。
+        記憶體引用釋放不等於立即抹除位元；作業系統、主機、網路平台的暫存、記錄或其他處理，以及第三方的保留行為，不在此項保證內。
+      </p>
+
+      <h2>歷史功能、停止分享與權利聯絡</h2>
+      <p>
+        本 MVP 尚未提供原規劃的一年歷史保存、查閱、單筆／全部刪除或撤回保存功能。
+        「不建立新歷史」不等於查無舊資料，也不表示原有資源已被刪除。Bot
+        收到歷史相關要求時，只會說明功能尚未提供。
+      </p>
+      <p>
+        你可以不傳位置、停止分享位置或封鎖 Bot；本服務沒有持續定位，停止分享後不會主動取得新位置。
+        已傳送或正在處理的訊息不因此撤回，也不會自動刪除第三方資料。
+        資料權利或隱私問題請寄至上方聯絡信箱；Bot 沒有人工客服收件或轉交處理功能，不能以 Bot
+        自動回覆當作人工受理或刪除完成。
+      </p>
+
+      <h2>政策頁面與第三方政策</h2>
+      <p>
+        這兩個政策頁面不使用指令碼、外部字型、圖片、分析工具或
+        Cookie；頁面請求仍會經過提供服務的主機及使用中的網路平台。 另請閱讀<a
+          href="/terms"
+          data-testid="privacy-terms-link"
+          >服務條款</a
+        >及下列官方政策。
+      </p>
+      <ul>
+        <li>
+          <a
+            href="https://cloud.google.com/maps-platform/terms/maps-end-user-terms"
+            data-testid="privacy-google-maps-link"
+            >Google Maps／Google Earth 附加服務條款</a
+          >
+        </li>
+        <li>
+          <a href="https://policies.google.com/privacy" data-testid="privacy-google-link"
+            >Google 隱私權政策</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.lycorp.co.jp/en/company/privacypolicy_zh-TW/"
+            data-testid="privacy-line-link"
+            >LINE（LY Corporation）隱私權政策</a
+          >
+        </li>
+        <li>
+          <a href="https://www.cloudflare.com/privacypolicy/" data-testid="privacy-cloudflare-link"
+            >Cloudflare 隱私權政策</a
+          >
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>

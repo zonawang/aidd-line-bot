@@ -1,0 +1,307 @@
+{
+  "stage": "code-generation",
+  "unit": "u1-lunch-bot",
+  "version": 1,
+  "writes": [
+    {
+      "path": ".env.example"
+    },
+    {
+      "path": ".gitignore"
+    },
+    {
+      "path": ".node-version"
+    },
+    {
+      "path": ".npmrc"
+    },
+    {
+      "path": ".prettierrc.json"
+    },
+    {
+      "path": "README.md"
+    },
+    {
+      "path": "compose.yaml"
+    },
+    {
+      "path": "config/versions.json"
+    },
+    {
+      "path": "db/migrations/001-model.sql"
+    },
+    {
+      "path": "db/roles/bootstrap.sql"
+    },
+    {
+      "path": "docs/app/database-layer.md"
+    },
+    {
+      "path": "docs/app/local-storage-assessment.md"
+    },
+    {
+      "path": "docs/app/mvp.md"
+    },
+    {
+      "path": "docs/app/privacy.html"
+    },
+    {
+      "path": "docs/app/setup-status.md"
+    },
+    {
+      "path": "docs/app/testing.md"
+    },
+    {
+      "path": "docs/app/terms.html"
+    },
+    {
+      "path": "eslint.config.mjs"
+    },
+    {
+      "path": "infra/lima/storage-probe.py"
+    },
+    {
+      "path": "infra/lima/storage.json"
+    },
+    {
+      "path": "infra/postgres/bootstrap-evidence.sh"
+    },
+    {
+      "path": "infra/postgres/bootstrap.sh"
+    },
+    {
+      "path": "infra/postgres/client.sh"
+    },
+    {
+      "path": "infra/postgres/create-denial.pl"
+    },
+    {
+      "path": "infra/postgres/disk-temp-guard.sh"
+    },
+    {
+      "path": "infra/postgres/negative-bootstrap.sh"
+    },
+    {
+      "path": "infra/postgres/ordinary-spill.sh"
+    },
+    {
+      "path": "infra/postgres/pg_hba.conf"
+    },
+    {
+      "path": "infra/postgres/pg_ident.conf"
+    },
+    {
+      "path": "infra/postgres/postgresql.conf"
+    },
+    {
+      "path": "infra/postgres/resume-check.sh"
+    },
+    {
+      "path": "infra/postgres/temp-pressure.sh"
+    },
+    {
+      "path": "package-lock.json"
+    },
+    {
+      "path": "package.json"
+    },
+    {
+      "path": "scripts/u1-lunch-bot/database-bootstrap-evidence.ts"
+    },
+    {
+      "path": "scripts/u1-lunch-bot/database-phase.ts"
+    },
+    {
+      "path": "scripts/u1-lunch-bot/database-resume-policy.ts"
+    },
+    {
+      "path": "scripts/u1-lunch-bot/database-runtime.ts"
+    },
+    {
+      "path": "scripts/u1-lunch-bot/evidence-writer-probe.mjs"
+    },
+    {
+      "path": "scripts/u1-lunch-bot/evidence-writer-probe.sh"
+    },
+    {
+      "path": "scripts/u1-lunch-bot/guest-storage-probe.sh"
+    },
+    {
+      "path": "scripts/u1-lunch-bot/lima-storage-policy.ts"
+    },
+    {
+      "path": "scripts/u1-lunch-bot/lima-storage-preflight.ts"
+    },
+    {
+      "path": "scripts/u1-lunch-bot/live-demo.mjs"
+    },
+    {
+      "path": "scripts/u1-lunch-bot/live-demo-source.ts"
+    },
+    {
+      "path": "scripts/u1-lunch-bot/storage-host.ts"
+    },
+    {
+      "path": "scripts/u1-lunch-bot/storage-policy.ts"
+    },
+    {
+      "path": "scripts/u1-lunch-bot/storage-preflight.ts"
+    },
+    {
+      "path": "src/app.ts"
+    },
+    {
+      "path": "src/config.ts"
+    },
+    {
+      "path": "src/demo.ts"
+    },
+    {
+      "path": "src/line-interaction/control-state.ts"
+    },
+    {
+      "path": "src/line-interaction/events.ts"
+    },
+    {
+      "path": "src/line-interaction/handler.ts"
+    },
+    {
+      "path": "src/line-interaction/messages.ts"
+    },
+    {
+      "path": "src/line-interaction/reply.ts"
+    },
+    {
+      "path": "src/line-interaction/signature.ts"
+    },
+    {
+      "path": "src/lunch-recommendation/recommend.ts"
+    },
+    {
+      "path": "src/main.ts"
+    },
+    {
+      "path": "src/restaurant-source-adapter/demo.ts"
+    },
+    {
+      "path": "src/restaurant-source-adapter/google.ts"
+    },
+    {
+      "path": "src/restaurant-source-adapter/types.ts"
+    },
+    {
+      "path": "src/shared/cancellation.ts"
+    },
+    {
+      "path": "src/shared/http.ts"
+    },
+    {
+      "path": "src/shared/location.ts"
+    },
+    {
+      "path": "src/shared/result.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/e2e/lunch-bot.test.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/fixtures/clock.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/fixtures/database-checkpoints.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/fixtures/database-reporter.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/fixtures/disk-guard-fixture.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/fixtures/fault-harness.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/fixtures/lima-storage-probe-unit.py"
+    },
+    {
+      "path": "tests/u1-lunch-bot/fixtures/mvp.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/fixtures/postgres-spill.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/fixtures/restart-fixtures.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/fixtures/safe-reporter.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/fixtures/spill-observations.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/fixtures/synthetic.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/integration/line-reply.test.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/integration/postgres-runtime.test.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/integration/schema.test.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/integration/source-boundary.test.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/integration/webhook.test.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/unit/bootstrap-evidence.test.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/unit/database-evidence.test.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/unit/database-resume.test.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/unit/disk-temp-guard.test.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/unit/evidence-writer-probe.test.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/unit/lima-storage-preflight.test.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/unit/line-interaction.test.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/unit/lunch-recommendation.test.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/unit/messages.test.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/unit/restaurant-source-adapter.test.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/unit/runner.test.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/unit/spill-observations.test.ts"
+    },
+    {
+      "path": "tests/u1-lunch-bot/unit/storage-preflight.test.ts"
+    },
+    {
+      "path": "tsconfig.build.json"
+    },
+    {
+      "path": "tsconfig.json"
+    },
+    {
+      "path": "vitest.config.ts"
+    }
+  ]
+}

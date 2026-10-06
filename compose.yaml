@@ -1,0 +1,69 @@
+name: u1-lunch-bot-961ab998
+services:
+  postgres:
+    image: docker.io/library/postgres:17.11-bookworm@sha256:75731e2765e7d0c8bb7dea960ef3bdcde68d16314991ab2057a2a74ea0fff257
+    platform: linux/arm64/v8
+    pull_policy: never
+    container_name: u1-lunch-bot-pg-961ab998-0b81-444c-ab33-578c76f008c0
+    hostname: u1-pg
+    user: '999:999'
+    entrypoint: ['/bin/bash', '/opt/u1/infra/postgres/bootstrap.sh']
+    environment:
+      U1_PROFILE: synthetic
+      U1_RESUME_ONLY: '${U1_RESUME_ONLY:-false}'
+      PGDATA: /var/lib/postgresql/data/pgdata
+    cpus: 1
+    mem_limit: 1g
+    memswap_limit: 1g
+    pids_limit: 64
+    shm_size: 16m
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    ulimits:
+      core: 0
+    logging:
+      driver: none
+    restart: 'no'
+    stop_signal: SIGTERM
+    stop_grace_period: 15s
+    labels:
+      com.u1-lunch-bot.owner: u1-lunch-bot
+      com.u1-lunch-bot.run: 961ab998-0b81-444c-ab33-578c76f008c0
+    volumes:
+      - type: bind
+        source: /private/tmp/u1-lunch-bot-storage-961ab998-0b81-444c-ab33-578c76f008c0/mount
+        target: /var/lib/postgresql/data
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./infra/postgres
+        target: /opt/u1/infra/postgres
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./db
+        target: /opt/u1/db
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: /private/tmp/u1-lunch-bot-storage-961ab998-0b81-444c-ab33-578c76f008c0/evidence
+        target: /u1-evidence
+        bind:
+          create_host_path: false
+    tmpfs:
+      - /run/u1:rw,noexec,nosuid,nodev,size=8m,uid=999,gid=999,mode=0700
+      - /u1-temp:rw,noexec,nosuid,nodev,size=128m,uid=999,gid=999,mode=0700
+      - /tmp:rw,noexec,nosuid,nodev,size=8m,uid=999,gid=999,mode=0700
+    networks:
+      database:
+        aliases: [u1-pg]
+networks:
+  database:
+    name: u1-lunch-bot-net-961ab998-0b81-444c-ab33-578c76f008c0
+    internal: true
+    labels:
+      com.u1-lunch-bot.owner: u1-lunch-bot
+      com.u1-lunch-bot.run: 961ab998-0b81-444c-ab33-578c76f008c0
