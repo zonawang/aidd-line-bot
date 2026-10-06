@@ -1,0 +1,372 @@
+{
+  "stage": "infrastructure-design",
+  "unit": "u1-lunch-bot",
+  "upstream_ids": [
+    "NFR1.1",
+    "NFR1.2",
+    "NFR1.3",
+    "NFR1.4",
+    "NFR1.5",
+    "NFR1.6",
+    "NFR1.7",
+    "NFR1.8",
+    "NFR1.9",
+    "NFR2.1",
+    "NFR2.2",
+    "NFR2.3",
+    "NFR2.4",
+    "NFR2.5",
+    "NFR2.6",
+    "NFR2.7",
+    "NFR2.8",
+    "NFR3.1",
+    "NFR3.2",
+    "NFR3.3",
+    "NFR3.4",
+    "NFR3.5",
+    "NFR4.1",
+    "NFR4.2",
+    "NFR4.3",
+    "NFR4.4",
+    "NFR4.5",
+    "NFR4.6",
+    "NFR4.7",
+    "NFR4.8",
+    "NFR4.9",
+    "NFR5.1",
+    "NFR5.2",
+    "NFR5.3",
+    "NFR5.4",
+    "NFR5.5",
+    "NFR6.1",
+    "NFR6.2",
+    "NFR6.3",
+    "NFR7.1",
+    "NFR7.2",
+    "NFR8.1",
+    "NFR8.2",
+    "NFR8.3",
+    "NFR8.4",
+    "NFR9.1",
+    "NFR9.2",
+    "NFR9.3",
+    "NFR9.4",
+    "NFR9.5"
+  ],
+  "coverage": [
+    {
+      "id": "NFR1.1",
+      "status": "OK",
+      "target": "monitoring-design.md#M-03; cicd-pipeline.md#C-02"
+    },
+    {
+      "id": "NFR1.2",
+      "status": "OK",
+      "target": "infrastructure-specification.md#Infrastructure Services; monitoring-design.md#M-03"
+    },
+    {
+      "id": "NFR1.3",
+      "status": "OK",
+      "target": "monitoring-design.md#M-03; cicd-pipeline.md#C-02"
+    },
+    {
+      "id": "NFR1.4",
+      "status": "OK",
+      "target": "infrastructure-specification.md#I-01; monitoring-design.md#M-03"
+    },
+    {
+      "id": "NFR1.5",
+      "status": "OK",
+      "target": "infrastructure-specification.md#Infrastructure Services; infrastructure-specification.md#I-01"
+    },
+    {
+      "id": "NFR1.6",
+      "status": "OK",
+      "target": "infrastructure-specification.md#Infrastructure Services; cicd-pipeline.md#C-03"
+    },
+    {
+      "id": "NFR1.7",
+      "status": "OK",
+      "target": "infrastructure-specification.md#Deployment; monitoring-design.md#M-01"
+    },
+    {
+      "id": "NFR1.8",
+      "status": "OK",
+      "target": "infrastructure-specification.md#Infrastructure Services; monitoring-design.md#M-01"
+    },
+    {
+      "id": "NFR1.9",
+      "status": "OK",
+      "target": "infrastructure-specification.md#Deployment; cicd-pipeline.md#C-05"
+    },
+    {
+      "id": "NFR2.1",
+      "status": "OK",
+      "target": "infrastructure-specification.md#I-02; cicd-pipeline.md#C-03"
+    },
+    {
+      "id": "NFR2.2",
+      "status": "OK",
+      "target": "cicd-pipeline.md#C-03; infrastructure-specification.md#Deployment"
+    },
+    {
+      "id": "NFR2.3",
+      "status": "OK",
+      "target": "infrastructure-specification.md#Infrastructure Services; cicd-pipeline.md#C-03"
+    },
+    {
+      "id": "NFR2.4",
+      "status": "OK",
+      "target": "infrastructure-specification.md#I-01; cicd-pipeline.md#C-03"
+    },
+    {
+      "id": "NFR2.5",
+      "status": "OK",
+      "target": "infrastructure-specification.md#I-01; monitoring-design.md#M-01"
+    },
+    {
+      "id": "NFR2.6",
+      "status": "OK",
+      "target": "infrastructure-specification.md#I-01; cicd-pipeline.md#C-05"
+    },
+    {
+      "id": "NFR2.7",
+      "status": "OK",
+      "target": "infrastructure-specification.md#Infrastructure Services; cicd-pipeline.md#C-03"
+    },
+    {
+      "id": "NFR2.8",
+      "status": "OK",
+      "target": "infrastructure-specification.md#I-01; cicd-pipeline.md#C-03"
+    },
+    {
+      "id": "NFR3.1",
+      "status": "OK",
+      "target": "infrastructure-specification.md#I-01; cicd-pipeline.md#C-03"
+    },
+    {
+      "id": "NFR3.2",
+      "status": "OK",
+      "target": "infrastructure-specification.md#I-02; cicd-pipeline.md#C-03"
+    },
+    {
+      "id": "NFR3.3",
+      "status": "OK",
+      "target": "infrastructure-specification.md#I-01; infrastructure-specification.md#I-02"
+    },
+    {
+      "id": "NFR3.4",
+      "status": "OK",
+      "target": "infrastructure-specification.md#I-02; cicd-pipeline.md#C-04"
+    },
+    {
+      "id": "NFR3.5",
+      "status": "OK",
+      "target": "infrastructure-specification.md#I-01; monitoring-design.md#M-03; cicd-pipeline.md#C-03"
+    },
+    {
+      "id": "NFR4.1",
+      "status": "OK",
+      "target": "cicd-pipeline.md#C-03; cicd-pipeline.md#C-05"
+    },
+    {
+      "id": "NFR4.2",
+      "status": "OK",
+      "target": "infrastructure-specification.md#I-02; cicd-pipeline.md#C-04"
+    },
+    {
+      "id": "NFR4.3",
+      "status": "OK",
+      "target": "infrastructure-specification.md#Infrastructure Services; infrastructure-specification.md#I-02; infrastructure-specification.md#I-03"
+    },
+    {
+      "id": "NFR4.4",
+      "status": "OK",
+      "target": "infrastructure-specification.md#I-02; monitoring-design.md#M-02"
+    },
+    {
+      "id": "NFR4.5",
+      "status": "OK",
+      "target": "monitoring-design.md#M-04; cicd-pipeline.md#C-04"
+    },
+    {
+      "id": "NFR4.6",
+      "status": "OK",
+      "target": "infrastructure-specification.md#I-02; cicd-pipeline.md#C-03"
+    },
+    {
+      "id": "NFR4.7",
+      "status": "OK",
+      "target": "infrastructure-specification.md#Infrastructure Services; infrastructure-specification.md#I-04"
+    },
+    {
+      "id": "NFR4.8",
+      "status": "OK",
+      "target": "infrastructure-specification.md#I-02; infrastructure-specification.md#I-03; cicd-pipeline.md#C-03"
+    },
+    {
+      "id": "NFR4.9",
+      "status": "OK",
+      "target": "infrastructure-specification.md#I-02; monitoring-design.md#M-02"
+    },
+    {
+      "id": "NFR5.1",
+      "status": "OK",
+      "target": "infrastructure-specification.md#I-03; monitoring-design.md#M-01"
+    },
+    {
+      "id": "NFR5.2",
+      "status": "OK",
+      "target": "monitoring-design.md#M-01; monitoring-design.md#M-04"
+    },
+    {
+      "id": "NFR5.3",
+      "status": "OK",
+      "target": "monitoring-design.md#M-03; cicd-pipeline.md#C-02"
+    },
+    {
+      "id": "NFR5.4",
+      "status": "OK",
+      "target": "monitoring-design.md#M-02; monitoring-design.md#M-05"
+    },
+    {
+      "id": "NFR5.5",
+      "status": "OK",
+      "target": "monitoring-design.md#M-04; cicd-pipeline.md#C-04"
+    },
+    {
+      "id": "NFR6.1",
+      "status": "OK",
+      "target": "infrastructure-specification.md#I-04; cicd-pipeline.md#C-05"
+    },
+    {
+      "id": "NFR6.2",
+      "status": "OK",
+      "target": "infrastructure-specification.md#I-04; cicd-pipeline.md#C-05"
+    },
+    {
+      "id": "NFR6.3",
+      "status": "OK",
+      "target": "infrastructure-specification.md#Infrastructure Services; infrastructure-specification.md#I-04"
+    },
+    {
+      "id": "NFR7.1",
+      "status": "OK",
+      "target": "infrastructure-specification.md#I-03; cicd-pipeline.md#C-03"
+    },
+    {
+      "id": "NFR7.2",
+      "status": "OK",
+      "target": "infrastructure-specification.md#Deployment; cicd-pipeline.md#C-03"
+    },
+    {
+      "id": "NFR8.1",
+      "status": "OK",
+      "target": "cicd-pipeline.md#C-02"
+    },
+    {
+      "id": "NFR8.2",
+      "status": "OK",
+      "target": "cicd-pipeline.md#C-02"
+    },
+    {
+      "id": "NFR8.3",
+      "status": "OK",
+      "target": "cicd-pipeline.md#C-03"
+    },
+    {
+      "id": "NFR8.4",
+      "status": "OK",
+      "target": "cicd-pipeline.md#C-03; cicd-pipeline.md#C-06"
+    },
+    {
+      "id": "NFR9.1",
+      "status": "OK",
+      "target": "infrastructure-specification.md#I-01; cicd-pipeline.md#C-02"
+    },
+    {
+      "id": "NFR9.2",
+      "status": "OK",
+      "target": "cicd-pipeline.md#C-01; cicd-pipeline.md#C-04"
+    },
+    {
+      "id": "NFR9.3",
+      "status": "OK",
+      "target": "cicd-pipeline.md#C-03"
+    },
+    {
+      "id": "NFR9.4",
+      "status": "OK",
+      "target": "cicd-pipeline.md#C-03; cicd-pipeline.md#C-04"
+    },
+    {
+      "id": "NFR9.5",
+      "status": "OK",
+      "target": "infrastructure-specification.md#I-04; cicd-pipeline.md#C-06"
+    }
+  ],
+  "coverage_basis": "OK僅表示在NFR Design LC-03明示修訂基準下，有基礎設施配置或必要驗證／啟用門檻設計；不是原強保證達成、資源已建立或應用／CI／政策驗證通過。涵蓋全部50項以免省略需CI驗證的應用不變量。",
+  "summary_authorization_id": "ba75ca1a561d29c9871d31eafe17511b5b80b0e8a5f237aa7c043370f6f153e9",
+  "baseline": {
+    "source": "../nfr-design/logical-components.md#LC-03",
+    "summary_authorization_id": "f451da1a48f2b605e5c6a399203fe6caad38982e4347a0c1d6c7ed55e0d11d17",
+    "frozen_upstream": true
+  },
+  "amendments": [
+    {
+      "change": "CHG-01",
+      "ids": [
+        "NFR2.3",
+        "NFR3.3"
+      ],
+      "basis": "事件由LineInteraction受限repository擁有；權利與歷史由DataPrivacy擁有。",
+      "target": "infrastructure-specification.md#I-01"
+    },
+    {
+      "change": "CHG-02",
+      "ids": [
+        "NFR3.5"
+      ],
+      "basis": "原實際LINE送出排序改原子歷史頁核准＋至多一秒單次啟動資格。",
+      "target": "infrastructure-specification.md#I-01; cicd-pipeline.md#C-03"
+    },
+    {
+      "change": "CHG-04",
+      "ids": [
+        "NFR1.4",
+        "NFR2.4",
+        "NFR2.5",
+        "NFR2.8",
+        "NFR4.2"
+      ],
+      "basis": "應用啟動截止；已合法啟動交易可能晚完成；unknown不假報rollback、原expiry／due及本人排序不改。",
+      "target": "infrastructure-specification.md#I-01"
+    },
+    {
+      "change": "CHG-05",
+      "ids": [
+        "NFR4.3",
+        "NFR4.8",
+        "NFR4.9",
+        "NFR5.1",
+        "NFR7.1"
+      ],
+      "basis": "24h線上主表移除；底層殘留可能超過一年，無固定物理擦除／不可復原保證，無新增副本或不復活豁免。",
+      "target": "infrastructure-specification.md#I-02; infrastructure-specification.md#I-03"
+    }
+  ],
+  "downstream_clarification": {
+    "source": "../nfr-design/reviews/review-02.md#R-05",
+    "target": "infrastructure-specification.md#I-03",
+    "anchors": [
+      "WF06 step 8",
+      "WF08 steps 3,8",
+      "QueryHistory state machine",
+      "CleanupJob state machine",
+      "BR7.4",
+      "BR9.2",
+      "BR9.3"
+    ],
+    "status": "僅補下游精確映射；不宣稱上游發現已獨立重審關閉"
+  }
+}

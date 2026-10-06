@@ -1,0 +1,361 @@
+{
+  "stage": "nfr-design",
+  "unit": "u1-lunch-bot",
+  "upstream_ids": [
+    "NFR1.1",
+    "NFR1.2",
+    "NFR1.3",
+    "NFR1.4",
+    "NFR1.5",
+    "NFR1.6",
+    "NFR1.7",
+    "NFR1.8",
+    "NFR1.9",
+    "NFR2.1",
+    "NFR2.2",
+    "NFR2.3",
+    "NFR2.4",
+    "NFR2.5",
+    "NFR2.6",
+    "NFR2.7",
+    "NFR2.8",
+    "NFR3.1",
+    "NFR3.2",
+    "NFR3.3",
+    "NFR3.4",
+    "NFR3.5",
+    "NFR4.1",
+    "NFR4.2",
+    "NFR4.3",
+    "NFR4.4",
+    "NFR4.5",
+    "NFR4.6",
+    "NFR4.7",
+    "NFR4.8",
+    "NFR4.9",
+    "NFR5.1",
+    "NFR5.2",
+    "NFR5.3",
+    "NFR5.4",
+    "NFR5.5",
+    "NFR6.1",
+    "NFR6.2",
+    "NFR6.3",
+    "NFR7.1",
+    "NFR7.2",
+    "NFR8.1",
+    "NFR8.2",
+    "NFR8.3",
+    "NFR8.4",
+    "NFR9.1",
+    "NFR9.2",
+    "NFR9.3",
+    "NFR9.4",
+    "NFR9.5"
+  ],
+  "coverage": [
+    {
+      "id": "NFR1.1",
+      "status": "OK",
+      "target": "performance-design.md#PD-04"
+    },
+    {
+      "id": "NFR1.2",
+      "status": "OK",
+      "target": "performance-design.md#PD-01; performance-design.md#PD-02"
+    },
+    {
+      "id": "NFR1.3",
+      "status": "OK",
+      "target": "performance-design.md#PD-01; performance-design.md#PD-04"
+    },
+    {
+      "id": "NFR1.4",
+      "status": "OK",
+      "target": "performance-design.md#PD-01; reliability-design.md#RD-03; logical-components.md#LC-03 (explicit amendment)"
+    },
+    {
+      "id": "NFR1.5",
+      "status": "OK",
+      "target": "performance-design.md#PD-01; performance-design.md#PD-03"
+    },
+    {
+      "id": "NFR1.6",
+      "status": "OK",
+      "target": "performance-design.md#PD-02"
+    },
+    {
+      "id": "NFR1.7",
+      "status": "OK",
+      "target": "scalability-design.md#SC-01; performance-design.md#PD-04"
+    },
+    {
+      "id": "NFR1.8",
+      "status": "OK",
+      "target": "scalability-design.md#SC-01; performance-design.md#PD-02"
+    },
+    {
+      "id": "NFR1.9",
+      "status": "OK",
+      "target": "scalability-design.md#SC-02"
+    },
+    {
+      "id": "NFR2.1",
+      "status": "OK",
+      "target": "security-design.md#SD-01"
+    },
+    {
+      "id": "NFR2.2",
+      "status": "OK",
+      "target": "security-design.md#SD-01"
+    },
+    {
+      "id": "NFR2.3",
+      "status": "OK",
+      "target": "logical-components.md#LC-02; reliability-design.md#RD-01; logical-components.md#LC-03 (explicit amendment)"
+    },
+    {
+      "id": "NFR2.4",
+      "status": "OK",
+      "target": "reliability-design.md#RD-01; reliability-design.md#RD-03; logical-components.md#LC-03 (explicit amendment)"
+    },
+    {
+      "id": "NFR2.5",
+      "status": "OK",
+      "target": "reliability-design.md#RD-01; logical-components.md#LC-03 (explicit amendment)"
+    },
+    {
+      "id": "NFR2.6",
+      "status": "OK",
+      "target": "logical-components.md#LC-02; reliability-design.md#RD-02"
+    },
+    {
+      "id": "NFR2.7",
+      "status": "OK",
+      "target": "reliability-design.md#RD-02"
+    },
+    {
+      "id": "NFR2.8",
+      "status": "OK",
+      "target": "reliability-design.md#RD-03; logical-components.md#LC-03; logical-components.md#LC-06 (CHG-04 supersedes original deadline guarantee)"
+    },
+    {
+      "id": "NFR3.1",
+      "status": "OK",
+      "target": "security-design.md#SD-01; security-design.md#SD-02"
+    },
+    {
+      "id": "NFR3.2",
+      "status": "OK",
+      "target": "security-design.md#SD-02"
+    },
+    {
+      "id": "NFR3.3",
+      "status": "OK",
+      "target": "security-design.md#SD-02; security-design.md#SD-03; logical-components.md#LC-03 (explicit amendment)"
+    },
+    {
+      "id": "NFR3.4",
+      "status": "OK",
+      "target": "security-design.md#SD-03"
+    },
+    {
+      "id": "NFR3.5",
+      "status": "OK",
+      "target": "security-design.md#SD-05; logical-components.md#LC-03; logical-components.md#LC-06 (CHG-02 supersedes original actual-send boundary)"
+    },
+    {
+      "id": "NFR4.1",
+      "status": "OK",
+      "target": "security-design.md#SD-01"
+    },
+    {
+      "id": "NFR4.2",
+      "status": "OK",
+      "target": "performance-design.md#PD-02; security-design.md#SD-03; logical-components.md#LC-03 (explicit amendment)"
+    },
+    {
+      "id": "NFR4.3",
+      "status": "OK",
+      "target": "security-design.md#SD-04; reliability-design.md#RD-01; logical-components.md#LC-03 (explicit amendment)"
+    },
+    {
+      "id": "NFR4.4",
+      "status": "OK",
+      "target": "security-design.md#SD-02; reliability-design.md#RD-04"
+    },
+    {
+      "id": "NFR4.5",
+      "status": "OK",
+      "target": "observability-design.md#OD-01; observability-design.md#OD-03"
+    },
+    {
+      "id": "NFR4.6",
+      "status": "OK",
+      "target": "security-design.md#SD-04; reliability-design.md#RD-04"
+    },
+    {
+      "id": "NFR4.7",
+      "status": "OK",
+      "target": "security-design.md#SD-06"
+    },
+    {
+      "id": "NFR4.8",
+      "status": "OK",
+      "target": "security-design.md#SD-04; reliability-design.md#RD-04; logical-components.md#LC-03; logical-components.md#LC-06 (CHG-05 supersedes original all-residue erasure guarantee)"
+    },
+    {
+      "id": "NFR4.9",
+      "status": "OK",
+      "target": "reliability-design.md#RD-04; logical-components.md#LC-03 (explicit amendment)"
+    },
+    {
+      "id": "NFR5.1",
+      "status": "OK",
+      "target": "reliability-design.md#RD-02; reliability-design.md#RD-05; logical-components.md#LC-03 (explicit amendment)"
+    },
+    {
+      "id": "NFR5.2",
+      "status": "OK",
+      "target": "observability-design.md#OD-01; observability-design.md#OD-02"
+    },
+    {
+      "id": "NFR5.3",
+      "status": "OK",
+      "target": "observability-design.md#OD-02"
+    },
+    {
+      "id": "NFR5.4",
+      "status": "OK",
+      "target": "observability-design.md#OD-02; reliability-design.md#RD-04"
+    },
+    {
+      "id": "NFR5.5",
+      "status": "OK",
+      "target": "observability-design.md#OD-01; observability-design.md#OD-04"
+    },
+    {
+      "id": "NFR6.1",
+      "status": "OK",
+      "target": "security-design.md#SD-06; logical-components.md#LC-04"
+    },
+    {
+      "id": "NFR6.2",
+      "status": "OK",
+      "target": "security-design.md#SD-06"
+    },
+    {
+      "id": "NFR6.3",
+      "status": "OK",
+      "target": "security-design.md#SD-06; logical-components.md#LC-04"
+    },
+    {
+      "id": "NFR7.1",
+      "status": "OK",
+      "target": "reliability-design.md#RD-02; logical-components.md#LC-03 (explicit amendment)"
+    },
+    {
+      "id": "NFR7.2",
+      "status": "OK",
+      "target": "reliability-design.md#RD-02"
+    },
+    {
+      "id": "NFR8.1",
+      "status": "OK",
+      "target": "observability-design.md#OD-03"
+    },
+    {
+      "id": "NFR8.2",
+      "status": "OK",
+      "target": "observability-design.md#OD-03"
+    },
+    {
+      "id": "NFR8.3",
+      "status": "OK",
+      "target": "observability-design.md#OD-04; reliability-design.md#RD-05"
+    },
+    {
+      "id": "NFR8.4",
+      "status": "OK",
+      "target": "observability-design.md#OD-04; performance-design.md#PD-04"
+    },
+    {
+      "id": "NFR9.1",
+      "status": "OK",
+      "target": "observability-design.md#OD-03"
+    },
+    {
+      "id": "NFR9.2",
+      "status": "OK",
+      "target": "observability-design.md#OD-03"
+    },
+    {
+      "id": "NFR9.3",
+      "status": "OK",
+      "target": "observability-design.md#OD-03"
+    },
+    {
+      "id": "NFR9.4",
+      "status": "OK",
+      "target": "observability-design.md#OD-03"
+    },
+    {
+      "id": "NFR9.5",
+      "status": "OK",
+      "target": "logical-components.md#LC-04; logical-components.md#LC-05"
+    }
+  ],
+  "coverage_basis": "OK means concrete design for the explicitly amended baseline in logical-components.md LC-03, not original guarantees or tested compliance. Original upstream files remain frozen.",
+  "summary_authorization_id": "f451da1a48f2b605e5c6a399203fe6caad38982e4347a0c1d6c7ed55e0d11d17",
+  "amendments": [
+    {
+      "change": "CHG-01",
+      "questions": [
+        "Q1"
+      ],
+      "ids": [
+        "NFR2.3",
+        "NFR3.3"
+      ],
+      "basis": "Ownership wording clarified; shared PostgreSQL, separate restricted repositories."
+    },
+    {
+      "change": "CHG-02",
+      "questions": [
+        "Q3"
+      ],
+      "ids": [
+        "NFR3.5"
+      ],
+      "basis": "Original actual-send guarantee superseded by atomic history-output authorization with at-most-one-second send initiation permission."
+    },
+    {
+      "change": "CHG-04",
+      "questions": [
+        "Q2"
+      ],
+      "ids": [
+        "NFR1.4",
+        "NFR2.4",
+        "NFR2.5",
+        "NFR2.8",
+        "NFR4.2"
+      ],
+      "basis": "Initiation deadline; previously authorized and initiated transactions may complete later. No false rollback, expiry and deletion order unchanged."
+    },
+    {
+      "change": "CHG-05",
+      "questions": [
+        "Q4"
+      ],
+      "ids": [
+        "NFR4.3",
+        "NFR4.8",
+        "NFR4.9",
+        "NFR5.1",
+        "NFR7.1"
+      ],
+      "basis": "24-hour online-primary-row removal; no fixed physical-residue-erasure or irrecoverability promise. Residue may exceed one year."
+    }
+  ]
+}
