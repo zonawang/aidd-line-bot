@@ -1,0 +1,25 @@
+\set ON_ERROR_STOP on
+CREATE ROLE u1_migration NOLOGIN NOSUPERUSER NOCREATEDB NOCREATEROLE NOREPLICATION NOBYPASSRLS;
+CREATE ROLE line_event_app LOGIN NOSUPERUSER NOCREATEDB NOCREATEROLE NOREPLICATION NOBYPASSRLS CONNECTION LIMIT 4;
+CREATE ROLE privacy_app LOGIN NOSUPERUSER NOCREATEDB NOCREATEROLE NOREPLICATION NOBYPASSRLS CONNECTION LIMIT 7;
+CREATE DATABASE lunch_bot OWNER u1_migration TEMPLATE template0 ENCODING 'UTF8';
+REVOKE ALL ON DATABASE lunch_bot FROM PUBLIC;
+REVOKE ALL ON DATABASE postgres FROM PUBLIC;
+REVOKE ALL ON DATABASE template1 FROM PUBLIC;
+GRANT CONNECT ON DATABASE lunch_bot TO line_event_app, privacy_app;
+ALTER ROLE line_event_app SET search_path = line_event, pg_catalog;
+ALTER ROLE privacy_app SET search_path = privacy, pg_catalog;
+ALTER ROLE line_event_app SET statement_timeout = '400ms';
+ALTER ROLE privacy_app SET statement_timeout = '400ms';
+ALTER ROLE line_event_app SET transaction_timeout = '400ms';
+ALTER ROLE privacy_app SET transaction_timeout = '400ms';
+ALTER ROLE line_event_app SET idle_in_transaction_session_timeout = '400ms';
+ALTER ROLE privacy_app SET idle_in_transaction_session_timeout = '400ms';
+ALTER ROLE line_event_app SET lock_timeout = '100ms';
+ALTER ROLE privacy_app SET lock_timeout = '100ms';
+ALTER ROLE line_event_app SET temp_file_limit = '16MB';
+ALTER ROLE privacy_app SET temp_file_limit = '16MB';
+ALTER ROLE line_event_app SET temp_tablespaces = 'u1_temp';
+ALTER ROLE privacy_app SET temp_tablespaces = 'u1_temp';
+ALTER ROLE line_event_app SET timezone = 'UTC';
+ALTER ROLE privacy_app SET timezone = 'UTC';

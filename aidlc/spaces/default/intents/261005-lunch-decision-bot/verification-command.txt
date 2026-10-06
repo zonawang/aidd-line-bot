@@ -1,0 +1,1 @@
+npm run demo && npm run test:e2e -- --project u1-lunch-bot-e2e tests/u1-lunch-bot/e2e/lunch-bot.test.ts

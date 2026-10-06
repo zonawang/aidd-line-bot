@@ -1,0 +1,44 @@
+{
+  "name": "u1-lunch-bot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "午餐決定器 LINE Bot：私訊推薦與可選本人歷史",
+  "type": "module",
+  "engines": {
+    "node": "24.18.0",
+    "npm": "11.16.0"
+  },
+  "packageManager": "npm@11.16.0",
+  "scripts": {
+    "dev": "npm run build && APP_MODE=demo node dist/main.js",
+    "start": "node --env-file-if-exists=.env dist/main.js",
+    "demo": "npm run build && node dist/demo.js",
+    "ci": "node scripts/u1-lunch-bot/ci.mjs",
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "lint": "eslint --max-warnings=0 .",
+    "format:check": "prettier --check package.json tsconfig.json tsconfig.build.json eslint.config.mjs .prettierrc.json vitest.config.ts \"{src,config,tests/u1-lunch-bot,scripts/u1-lunch-bot,docs/app}/**/*.{ts,mjs,json,md}\"",
+    "test:unit": "vitest run",
+    "test:integration": "vitest run",
+    "test:e2e": "vitest run",
+    "test:performance": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "fastify": "5.12.5",
+    "pg": "8.23.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "24.19.1",
+    "@types/pg": "8.23.1",
+    "@vitest/coverage-v8": "5.0.3",
+    "eslint": "10.12.0",
+    "globals": "17.13.0",
+    "prettier": "3.9.9",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.71.0",
+    "vite": "8.3.2",
+    "vitest": "5.0.3"
+  }
+}
