@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>服務條款｜午餐決定器 LINE Bot</title>
+  </head>
+  <body>
+    <main>
+      <h1>午餐決定器 LINE Bot 服務條款</h1>
+      <p>
+        <strong>已發布；生效日期：2026-10-06。</strong>
+        本頁不代表法律審查已完成，單純瀏覽本頁不構成條款接受。
+      </p>
+      <p>營運者：<strong>Zona</strong></p>
+      <p>
+        聯絡信箱：<a href="mailto:bear336339@gmail.com" data-testid="terms-contact-link"
+          >bear336339@gmail.com</a
+        >
+      </p>
+
+      <h2>服務內容與使用方式</h2>
+      <p>
+        本 MVP 僅支援 LINE 一對一私訊。請主動傳送 LINE
+        位置訊息；文字地址與網址不會轉成搜尋位置，群組不提供推薦。
+        搜尋點可以是你選定的地點，不必是目前所在地；本服務不持續定位或背景追蹤。
+      </p>
+      <p>
+        尚未確認告知時，應用程式會放棄首次收到的位置，不送往 Google、不保留等待確認。 但訊息已經由
+        LINE 處理；使用 Cloudflare Tunnel 入口時，也已經由 Cloudflare 轉送。
+        請讀取告知並回覆「了解，僅當次推薦」，再重新傳送位置，才會進行查詢。
+      </p>
+      <p>
+        真實模式使用 Google Places API 查詢餐廳；本機 synthetic
+        展示使用虛構餐廳與模擬回覆，不代表真實查詢或 LINE 已接受回覆。
+      </p>
+
+      <h2>推薦範圍與限制</h2>
+      <p>
+        僅在來源此次實際返回的候選集合中，篩選距搜尋點 WGS84
+        直線距離不大於一公里的餐廳，最多提供三家不同店家及名稱、資料所支持的理由、地圖與必要來源標示。
+        來源返回筆數有上限；結果不涵蓋全區所有餐廳，也不保證是全區最近三家或最佳選擇。
+      </p>
+      <p>
+        資料顯示營業中的店家優先，未知狀態會標示，明確休息或停業者排除；不足三家時只提供實際數量。
+        營業資訊可能過時，前往前請向店家確認。直線距離不等於步行或行車距離，地圖連結不保證導航路線、安全、座位、價格或餐飲品質。
+        本服務不提供訂位、訂餐或付款，也不保證任何交易或導航結果。
+      </p>
+      <p>
+        零候選、來源故障與逾時會分別處理，不會擴大搜尋範圍湊數。LINE
+        拒絕或回覆結果不明時可能收不到訊息；服務不盲目重送，也不以推播補發。 LINE
+        接受訊息不等於裝置已顯示，服務與第三方的持續可用性不受保證。
+      </p>
+
+      <h2>資料、停止使用與聯絡</h2>
+      <p>
+        本 MVP
+        不建立位置或推薦歷史；原規劃的一年保存、歷史查閱、刪除及撤回保存功能均尚未提供，不代表舊資源或第三方副本已刪除。
+        詳見<a href="/privacy" data-testid="terms-privacy-link">隱私政策</a>。
+        你可停止分享位置或封鎖 Bot；已送出的資料不因此從 LINE、Google 或其他第三方自動收回。
+      </p>
+      <p>
+        問題或資料權利請求請寄至上方聯絡信箱。 Bot 沒有人工客服收件或轉交處理功能，傳訊給 Bot
+        不代表人工已受理。
+      </p>
+
+      <h2>第三方條款</h2>
+      <p>
+        使用 Google Maps 相關內容與連結時，另適用
+        <a
+          href="https://cloud.google.com/maps-platform/terms/maps-end-user-terms"
+          data-testid="terms-google-maps-link"
+          >Google Maps／Google Earth 附加服務條款</a
+        >及
+        <a href="https://policies.google.com/privacy" data-testid="terms-google-privacy-link"
+          >Google 隱私權政策</a
+        >。 LINE 與 Cloudflare 的資料處理請參閱
+        <a
+          href="https://www.lycorp.co.jp/en/company/privacypolicy_zh-TW/"
+          data-testid="terms-line-privacy-link"
+          >LINE（LY Corporation）隱私權政策</a
+        >及
+        <a
+          href="https://www.cloudflare.com/privacypolicy/"
+          data-testid="terms-cloudflare-privacy-link"
+          >Cloudflare 隱私權政策</a
+        >。
+      </p>
+    </main>
+  </body>
+</html>
