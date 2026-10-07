@@ -7,6 +7,7 @@ Node.js 24.18.0／npm 11.16.0、TypeScript、Fastify 單程序。沿用現有 lo
 2026-10-06，本次 MVP 的 AIDLC workflow 已完成 19/19 階段；真實 LINE 核心推薦流程已完成一次受控驗證。本機 CI 七項檢查通過，應用原始碼行覆蓋率 90.75%。原完整歷史版本、必要安全掃描與正式上線仍未就緒，workflow 完成不代表合併或 production 放行。
 
 - [MVP 最終成果報告](aidlc/spaces/default/intents/261005-lunch-decision-bot/mvp-final-report.md)：交付內容、驗證結果、限制及各階段證據入口。
+- [AIDD 開發心得文章](medium.md)：用午餐 Bot 的實作與踩坑經驗，快速認識 AI 參與開發的方式。
 - [執行與 Demo 指引](docs/app/mvp.md)：離線展示、runtime 設定與真實 LINE 測試授權界線。
 - [本機 CI 指引](docs/app/ci.md)：執行 `npm run ci`，不載入秘密、不外呼 LINE／Google。
 
